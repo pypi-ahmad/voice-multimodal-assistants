@@ -1,0 +1,32 @@
+
+=== Configured Latency Budget ===
+Stage          | Target (ms) | Timeout (ms) | Notes                                 
+---------------+-------------+--------------+---------------------------------------
+ingress        | 180         | 260          | capture + VAD + enqueue               
+asr            | 280         | 380          | speech-to-text                        
+llm            | 520         | 760          | response generation                   
+tts            | 260         | 420          | text-to-speech                        
+output         | 90          | 140          | stream/send result                    
+queueing_slack | 70          | -            | queue wait + scheduling jitter reserve
+end_to_end     | 1400        | -            | global deadline                       
+
+=== Running Streaming Pipeline ===
+08:03:30 | INFO | req-001 | mode=normal | e2e=1315.3ms | deadline=OK | audio=False | degraded=asr_timeout_fallback,tts_skipped_for_latency
+08:03:31 | INFO | req-002 | mode=normal | e2e=1665.5ms | deadline=MISS | audio=False | degraded=asr_timeout_fallback,tts_skipped_for_latency
+08:03:32 | INFO | req-003 | mode=normal | e2e=2156.0ms | deadline=MISS | audio=False | degraded=tts_skipped_for_latency
+08:03:32 | INFO | req-004 | mode=normal | e2e=2679.9ms | deadline=MISS | audio=False | degraded=tts_skipped_for_latency
+08:03:33 | INFO | req-005 | mode=normal | e2e=3264.9ms | deadline=MISS | audio=False | degraded=llm_timeout_fallback,tts_skipped_for_latency
+08:03:34 | INFO | req-006 | mode=normal | e2e=3856.0ms | deadline=MISS | audio=False | degraded=asr_timeout_fallback,llm_timeout_fallback,tts_skipped_for_latency
+08:03:35 | INFO | req-007 | mode=normal | e2e=4550.9ms | deadline=MISS | audio=False | degraded=llm_timeout_fallback,tts_skipped_for_latency
+08:03:35 | INFO | req-008 | mode=normal | e2e=5109.6ms | deadline=MISS | audio=False | degraded=tts_skipped_for_latency
+
+=== Runtime Summary ===
+Metric            | N | P50 ms | P95 ms | Timeout/Miss | Errors | Skipped/Degraded | Dropped
+------------------+---+--------+--------+--------------+--------+------------------+--------
+ingress           | 8 | 149.2  | 163.9  | 0            | 0      | 0                | 0      
+asr               | 8 | 265.9  | 382.5  | 3            | 0      | 0                | 0      
+llm               | 8 | 714.2  | 761.3  | 3            | 0      | 0                | 0      
+tts               | 8 | 0.0    | 0.0    | 0            | 0      | 8                | 0      
+output            | 8 | 66.7   | 104.6  | 0            | 0      | 0                | 0      
+queueing_overhead | 8 | 1828.3 | 3707.8 | -            | -      | -                | -      
+end_to_end        | 8 | 2972.4 | 4914.1 | 7            | -      | 8                | -      

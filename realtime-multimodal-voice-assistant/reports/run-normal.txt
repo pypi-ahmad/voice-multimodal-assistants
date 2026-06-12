@@ -1,0 +1,32 @@
+
+=== Configured Latency Budget ===
+Stage          | Target (ms) | Timeout (ms) | Notes                                 
+---------------+-------------+--------------+---------------------------------------
+ingress        | 180         | 260          | capture + VAD + enqueue               
+asr            | 280         | 380          | speech-to-text                        
+llm            | 520         | 760          | response generation                   
+tts            | 260         | 420          | text-to-speech                        
+output         | 90          | 140          | stream/send result                    
+queueing_slack | 70          | -            | queue wait + scheduling jitter reserve
+end_to_end     | 1400        | -            | global deadline                       
+
+=== Running Streaming Pipeline ===
+08:03:27 | INFO | req-001 | mode=normal | e2e=805.0ms | deadline=OK | audio=True | degraded=none
+08:03:27 | INFO | req-002 | mode=normal | e2e=984.1ms | deadline=OK | audio=True | degraded=none
+08:03:27 | INFO | req-003 | mode=normal | e2e=1223.7ms | deadline=OK | audio=True | degraded=none
+08:03:28 | INFO | req-004 | mode=normal | e2e=1217.6ms | deadline=OK | audio=False | degraded=tts_skipped_for_latency
+08:03:28 | INFO | req-005 | mode=normal | e2e=1378.4ms | deadline=OK | audio=False | degraded=tts_skipped_for_latency
+08:03:28 | INFO | req-006 | mode=normal | e2e=1560.7ms | deadline=MISS | audio=False | degraded=tts_skipped_for_latency
+08:03:29 | INFO | req-007 | mode=normal | e2e=1802.4ms | deadline=MISS | audio=False | degraded=tts_skipped_for_latency
+08:03:29 | INFO | req-008 | mode=normal | e2e=2002.5ms | deadline=MISS | audio=False | degraded=tts_skipped_for_latency
+
+=== Runtime Summary ===
+Metric            | N | P50 ms | P95 ms | Timeout/Miss | Errors | Skipped/Degraded | Dropped
+------------------+---+--------+--------+--------------+--------+------------------+--------
+ingress           | 8 | 150.6  | 162.4  | 0            | 0      | 0                | 0      
+asr               | 8 | 159.2  | 245.4  | 0            | 0      | 0                | 0      
+llm               | 8 | 330.9  | 371.6  | 0            | 0      | 0                | 0      
+tts               | 8 | 0.0    | 174.6  | 0            | 0      | 5                | 0      
+output            | 8 | 43.4   | 58.6   | 0            | 0      | 0                | 0      
+queueing_overhead | 8 | 638.1  | 1203.8 | -            | -      | -                | -      
+end_to_end        | 8 | 1301.0 | 1932.5 | 3            | -      | 5                | -      

@@ -1,0 +1,8 @@
+Notebook: notebooks/realtime_multimodal_tutorial.ipynb
+Start: 2026-06-12T08:29:47.439225+05:30
+End: 2026-06-12T08:30:00.436682+05:30
+Duration_seconds: 13.00
+Status: success
+Code_cells_total: 8
+Code_cells_executed: 8
+Code_cells_with_outputs: 7

@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-job-market-copilot-ollama"
+version = "0.1.0"
+description = "Notebook-first AI/ML remote job market copilot with local Ollama enrichment."
+readme = "README.md"
+requires-python = ">=3.12.10,<3.13"
+authors = [{ name = "Ahmad Mujtaba" }]
+license = "MIT"
+dependencies = [
+    "duckdb>=1.5.3",
+    "huggingface-hub>=1.19.0",
+    "jinja2>=3.1.6",
+    "loguru>=0.7.3",
+    "ollama>=0.6.2",
+    "plotly>=6.8.0",
+    "polars>=1.41.2",
+    "pyarrow>=24.0.0",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.14.1",
+    "requests>=2.34.2",
+    "streamlit>=1.58.0",
+    "tenacity>=9.1.4",
+    "typer>=0.25.1",
+]
+
+[project.scripts]
+job-market-copilot = "job_market_copilot.cli:app"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "jupyter>=1.1.1",
+    "nbclient>=0.11.0",
+    "pytest>=9.0.3",
+    "pytest-cov>=7.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

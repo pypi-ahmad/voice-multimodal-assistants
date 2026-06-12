@@ -1,0 +1,31 @@
+[project]
+name = "realtime-multimodal-voice-assistant"
+version = "0.1.0"
+description = "Real-time multimodal voice assistant pipeline with latency budgets and graceful degradation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "loguru>=0.7.2",
+  "pydantic>=2.8.0",
+  "pydantic-settings>=2.4.0",
+]
+
+[project.scripts]
+rtma-demo = "realtime_mm.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3.0",
+  "pytest-asyncio>=0.23.8",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+asyncio_mode = "auto"
+
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/realtime_mm"]
