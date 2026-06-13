@@ -1,0 +1,104 @@
+[
+  {
+    "trace_id": "demo-audio-001",
+    "input_mode": "audio",
+    "question_text": "Can you explain when emergency rollback is mandatory for API incidents?",
+    "retrieved": [
+      {
+        "source": "incident_playbook.md",
+        "title": "Incident Playbook",
+        "score": 0.6364,
+        "text": "# Incident Playbook\n\nFor API incidents, emergency rollback is mandatory if **p95 latency exceeds 1200 ms for 10 consecutive minutes**.\n\nPrimary paging system is **Solar Pager**.\n\nSeverity levels: S0 outage, S1 critical degradation, S2 moderate degradation, S3 low impact."
+      },
+      {
+        "source": "data_policy.md",
+        "title": "Data Policy",
+        "score": 0.0909,
+        "text": "# Data Policy\n\nRaw event logs are retained for **400 days**.\n\nFull backups run Sunday 02:30 UTC and are retained for 30 days."
+      },
+      {
+        "source": "release_notes_policy.md",
+        "title": "Release Notes Policy",
+        "score": 0.0909,
+        "text": "# Release Notes Policy\n\nWeekly release train is **Tuesday 16:00 UTC**.\n\nDeployments begin with **8% canary traffic** and are promoted after 45 minutes if error rate stays below 0.6%."
+      }
+    ],
+    "tutor_response_text": "From incident_playbook.md: # Incident Playbook\n\nFor API incidents, emergency rollback is mandatory if **p95 latency exceeds 1200 ms for 10 consecutive minutes**.\n\nPrimary paging system is **Solar Pager**.\n\nSeverity levels: S0 outage, S1 critical degradation, S2 moderate degradation, S3 low impact.\nThis fallback summary was produced because live model generation timed out.",
+    "quiz_question_text": "From incident_playbook.md, what is the most important threshold or value to remember?",
+    "tutor_audio_path": "/home/ahmad/AI/Projects/voice-ai-study-coach/artifacts/audio/demo-audio-001_tutor.wav",
+    "quiz_audio_path": "/home/ahmad/AI/Projects/voice-ai-study-coach/artifacts/audio/demo-audio-001_quiz.wav",
+    "tutor_audio_seconds": 7.846,
+    "quiz_audio_seconds": 1.774,
+    "tutor_fallback_used": true,
+    "quiz_fallback_used": true,
+    "total_latency_ms": 7022.152
+  },
+  {
+    "trace_id": "demo-audio-002",
+    "input_mode": "audio",
+    "question_text": "What is the enterprise first response SLA and where do escalations go?",
+    "retrieved": [
+      {
+        "source": "support_handbook.md",
+        "title": "Support Handbook",
+        "score": 0.4167,
+        "text": "# Support Handbook\n\nEnterprise first-response SLA is **20 minutes**.\n\nUrgent escalations must be posted in **#support-escalation** with ticket ID and impact summary."
+      },
+      {
+        "source": "release_notes_policy.md",
+        "title": "Release Notes Policy",
+        "score": 0.1667,
+        "text": "# Release Notes Policy\n\nWeekly release train is **Tuesday 16:00 UTC**.\n\nDeployments begin with **8% canary traffic** and are promoted after 45 minutes if error rate stays below 0.6%."
+      },
+      {
+        "source": "study_tips.md",
+        "title": "Study Tips",
+        "score": 0.1667,
+        "text": "# Study Tips\n\nUse active recall: answer without looking at notes first.\n\nUse spaced repetition: review hard concepts at increasing intervals.\n\nAfter every explanation, summarize in one sentence and test yourself with one question."
+      }
+    ],
+    "tutor_response_text": "From support_handbook.md: # Support Handbook\n\nEnterprise first-response SLA is **20 minutes**.\n\nUrgent escalations must be posted in **#support-escalation** with ticket ID and impact summary.\nThis fallback summary was produced because live model generation timed out.",
+    "quiz_question_text": "From support_handbook.md, what is the most important threshold or value to remember?",
+    "tutor_audio_path": "/home/ahmad/AI/Projects/voice-ai-study-coach/artifacts/audio/demo-audio-002_tutor.wav",
+    "quiz_audio_path": "/home/ahmad/AI/Projects/voice-ai-study-coach/artifacts/audio/demo-audio-002_quiz.wav",
+    "tutor_audio_seconds": 5.285,
+    "quiz_audio_seconds": 1.774,
+    "tutor_fallback_used": true,
+    "quiz_fallback_used": true,
+    "total_latency_ms": 7022.574
+  },
+  {
+    "trace_id": "demo-text-001",
+    "input_mode": "text",
+    "question_text": "What canary traffic percentage is used at release start?",
+    "retrieved": [
+      {
+        "source": "release_notes_policy.md",
+        "title": "Release Notes Policy",
+        "score": 0.3333,
+        "text": "# Release Notes Policy\n\nWeekly release train is **Tuesday 16:00 UTC**.\n\nDeployments begin with **8% canary traffic** and are promoted after 45 minutes if error rate stays below 0.6%."
+      },
+      {
+        "source": "incident_playbook.md",
+        "title": "Incident Playbook",
+        "score": 0.1111,
+        "text": "# Incident Playbook\n\nFor API incidents, emergency rollback is mandatory if **p95 latency exceeds 1200 ms for 10 consecutive minutes**.\n\nPrimary paging system is **Solar Pager**.\n\nSeverity levels: S0 outage, S1 critical degradation, S2 moderate degradation, S3 low impact."
+      },
+      {
+        "source": "study_tips.md",
+        "title": "Study Tips",
+        "score": 0.1111,
+        "text": "# Study Tips\n\nUse active recall: answer without looking at notes first.\n\nUse spaced repetition: review hard concepts at increasing intervals.\n\nAfter every explanation, summarize in one sentence and test yourself with one question."
+      }
+    ],
+    "tutor_response_text": "From release_notes_policy.md: # Release Notes Policy\n\nWeekly release train is **Tuesday 16:00 UTC**.\n\nDeployments begin with **8% canary traffic** and are promoted after 45 minutes if error rate stays below 0.6%.\nThis fallback summary was produced because live model generation timed out.",
+    "quiz_question_text": "From release_notes_policy.md, what is the most important threshold or value to remember?",
+    "tutor_audio_path": "/home/ahmad/AI/Projects/voice-ai-study-coach/artifacts/audio/demo-text-001_tutor.wav",
+    "quiz_audio_path": "/home/ahmad/AI/Projects/voice-ai-study-coach/artifacts/audio/demo-text-001_quiz.wav",
+    "tutor_audio_seconds": 6.237,
+    "quiz_audio_seconds": 1.774,
+    "tutor_fallback_used": true,
+    "quiz_fallback_used": true,
+    "total_latency_ms": 7033.089
+  }
+]

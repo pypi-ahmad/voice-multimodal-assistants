@@ -1,0 +1,1 @@
+Can you explain when emergency rollback is mandatory for API incidents?

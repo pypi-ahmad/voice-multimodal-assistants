@@ -1,0 +1,39 @@
+task_id,question,expected_source,baseline_answer,tutor_answer,baseline_keyword_recall,tutor_keyword_recall,keyword_gain,retrieval_hit,source_cited,tutor_fallback_used,quiz_fallback_used,tutor_audio_seconds,total_latency_ms
+q1,When should emergency rollback be triggered for API incidents?,incident_playbook.md,I do not know from the question alone.,"From incident_playbook.md: # Incident Playbook
+
+For API incidents, emergency rollback is mandatory if **p95 latency exceeds 1200 ms for 10 consecutive minutes**.
+
+Primary paging system is **Solar Pager**.
+
+Severity levels: S0 outage, S1 critical degradation, S2 moderate degradation, S3 low impact.
+This fallback summary was produced because live model generation timed out.",0.0,1.0,1.0,True,True,True,True,7.846,7023.702
+q2,What is the weekly release train schedule?,release_notes_policy.md,I do not know from the question alone.,"From release_notes_policy.md: # Release Notes Policy
+
+Weekly release train is **Tuesday 16:00 UTC**.
+
+Deployments begin with **8% canary traffic** and are promoted after 45 minutes if error rate stays below 0.6%.
+This fallback summary was produced because live model generation timed out.",0.0,1.0,1.0,True,True,True,True,6.237,7028.592
+q3,What canary percentage is used at deployment start?,release_notes_policy.md,I do not know from the question alone.,"From release_notes_policy.md: # Release Notes Policy
+
+Weekly release train is **Tuesday 16:00 UTC**.
+
+Deployments begin with **8% canary traffic** and are promoted after 45 minutes if error rate stays below 0.6%.
+This fallback summary was produced because live model generation timed out.",0.0,1.0,1.0,True,True,True,True,6.237,7044.185
+q4,What is enterprise first response SLA?,support_handbook.md,I do not know from the question alone.,"From support_handbook.md: # Support Handbook
+
+Enterprise first-response SLA is **20 minutes**.
+
+Urgent escalations must be posted in **#support-escalation** with ticket ID and impact summary.
+This fallback summary was produced because live model generation timed out.",0.0,1.0,1.0,True,True,True,True,5.285,7025.08
+q5,Where should urgent support escalations be posted?,support_handbook.md,I do not know from the question alone.,"From support_handbook.md: # Support Handbook
+
+Enterprise first-response SLA is **20 minutes**.
+
+Urgent escalations must be posted in **#support-escalation** with ticket ID and impact summary.
+This fallback summary was produced because live model generation timed out.",0.0,1.0,1.0,True,True,True,True,5.285,7020.657
+q6,How long are raw event logs retained?,data_policy.md,I do not know from the question alone.,"From data_policy.md: # Data Policy
+
+Raw event logs are retained for **400 days**.
+
+Full backups run Sunday 02:30 UTC and are retained for 30 days.
+This fallback summary was produced because live model generation timed out.",0.0,1.0,1.0,True,True,True,True,5.249,7018.903

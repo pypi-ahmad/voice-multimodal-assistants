@@ -1,0 +1,71 @@
+{
+  "generated_at_utc": "2026-06-12T11:44:32+00:00",
+  "trace_file": "/home/ahmad/AI/Projects/voice-ai-study-coach/artifacts/telemetry/traces.jsonl",
+  "n_spans": 175,
+  "n_unique_traces": 10,
+  "by_span": [
+    {
+      "span_name": "baseline_answer",
+      "count": 28,
+      "error_count": 0,
+      "latency_ms_mean": 2007.853,
+      "latency_ms_p50": 2003.874,
+      "latency_ms_p95": 2015.986,
+      "latency_ms_max": 2088.29
+    },
+    {
+      "span_name": "quiz_generation",
+      "count": 28,
+      "error_count": 0,
+      "latency_ms_mean": 2004.269,
+      "latency_ms_p50": 2003.87,
+      "latency_ms_p95": 2008.116,
+      "latency_ms_max": 2008.944
+    },
+    {
+      "span_name": "retrieve_context",
+      "count": 28,
+      "error_count": 0,
+      "latency_ms_mean": 0.061,
+      "latency_ms_p50": 0.059,
+      "latency_ms_p95": 0.073,
+      "latency_ms_max": 0.083
+    },
+    {
+      "span_name": "synthesize_quiz_audio",
+      "count": 28,
+      "error_count": 0,
+      "latency_ms_mean": 1.884,
+      "latency_ms_p50": 1.065,
+      "latency_ms_p95": 5.943,
+      "latency_ms_max": 8.077
+    },
+    {
+      "span_name": "synthesize_tutor_audio",
+      "count": 28,
+      "error_count": 0,
+      "latency_ms_mean": 8.86,
+      "latency_ms_p50": 8.835,
+      "latency_ms_p95": 15.146,
+      "latency_ms_max": 19.456
+    },
+    {
+      "span_name": "transcribe_audio",
+      "count": 7,
+      "error_count": 0,
+      "latency_ms_mean": 0.085,
+      "latency_ms_p50": 0.091,
+      "latency_ms_p95": 0.104,
+      "latency_ms_max": 0.105
+    },
+    {
+      "span_name": "tutor_answer",
+      "count": 28,
+      "error_count": 0,
+      "latency_ms_mean": 3005.983,
+      "latency_ms_p50": 3004.845,
+      "latency_ms_p95": 3012.842,
+      "latency_ms_max": 3021.719
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "total_jobs": 128,
+  "ai_jobs": 40,
+  "ai_share": 31.25,
+  "salary_coverage_ai": 37.5,
+  "source_counts": [
+    {
+      "source": "wwr",
+      "count": 23
+    },
+    {
+      "source": "remotive",
+      "count": 17
+    }
+  ],
+  "role_counts": [
+    {
+      "role_family": "other",
+      "count": 32
+    },
+    {
+      "role_family": "software engineer",
+      "count": 7
+    },
+    {
+      "role_family": "ml engineer",
+      "count": 1
+    }
+  ],
+  "seniority_counts": [
+    {
+      "seniority": "unknown",
+      "count": 30
+    },
+    {
+      "seniority": "senior",
+      "count": 7
+    },
+    {
+      "seniority": "mid",
+      "count": 2
+    },
+    {
+      "seniority": "intern",
+      "count": 1
+    }
+  ],
+  "top_skills": [
+    {
+      "core_skills": "backend",
+      "count": 7
+    },
+    {
+      "core_skills": "frontend",
+      "count": 6
+    },
+    {
+      "core_skills": "php",
+      "count": 6
+    },
+    {
+      "core_skills": "typescript",
+      "count": 6
+    },
+    {
+      "core_skills": "react",
+      "count": 6
+    },
+    {
+      "core_skills": "ai/ml",
+      "count": 4
+    },
+    {
+      "core_skills": "research",
+      "count": 4
+    },
+    {
+      "core_skills": "aws",
+      "count": 2
+    },
+    {
+      "core_skills": "project leadership",
+      "count": 1
+    },
+    {
+      "core_skills": ".net",
+      "count": 1
+    },
+    {
+      "core_skills": "jira",
+      "count": 1
+    },
+    {
+      "core_skills": "azure",
+      "count": 1
+    },
+    {
+      "core_skills": "workflow optimization",
+      "count": 1
+    },
+    {
+      "core_skills": "c#",
+      "count": 1
+    },
+    {
+      "core_skills": "ai engineering",
+      "count": 1
+    },
+    {
+      "core_skills": "machine learning",
+      "count": 1
+    },
+    {
+      "core_skills": "github",
+      "count": 1
+    },
+    {
+      "core_skills": "c++",
+      "count": 1
+    },
+    {
+      "core_skills": "c",
+      "count": 1
+    },
+    {
+      "core_skills": "executive partnership",
+      "count": 1
+    }
+  ],
+  "top_tools": [
+    {
+      "tooling": "laravel",
+      "count": 6
+    },
+    {
+      "tooling": "datadog",
+      "count": 6
+    },
+    {
+      "tooling": "aws",
+      "count": 5
+    },
+    {
+      "tooling": "jira",
+      "count": 5
+    },
+    {
+      "tooling": "github",
+      "count": 5
+    },
+    {
+      "tooling": "react native",
+      "count": 3
+    },
+    {
+      "tooling": "chat interfaces",
+      "count": 1
+    },
+    {
+      "tooling": "catalyst platform",
+      "count": 1
+    },
+    {
+      "tooling": "deployment tools",
+      "count": 1
+    },
+    {
+      "tooling": "node.js",
+      "count": 1
+    },
+    {
+      "tooling": "python",
+      "count": 1
+    },
+    {
+      "tooling": "php",
+      "count": 1
+    },
+    {
+      "tooling": "go",
+      "count": 1
+    },
+    {
+      "tooling": "react",
+      "count": 1
+    },
+    {
+      "tooling": "ui/ux design",
+      "count": 1
+    },
+    {
+      "tooling": "api",
+      "count": 1
+    },
+    {
+      "tooling": "golang",
+      "count": 1
+    },
+    {
+      "tooling": "spark",
+      "count": 1
+    },
+    {
+      "tooling": "infrastructure as code tools",
+      "count": 1
+    },
+    {
+      "tooling": "wordpress",
+      "count": 1
+    }
+  ],
+  "top_companies": [
+    {
+      "company": "LawnStarter",
+      "count": 11
+    },
+    {
+      "company": "AHU Technologies",
+      "count": 2
+    },
+    {
+      "company": "Mitre Media",
+      "count": 1
+    },
+    {
+      "company": "Anexia Internetdienstleistungs",
+      "count": 1
+    },
+    {
+      "company": "Air Apps",
+      "count": 1
+    },
+    {
+      "company": "CAI",
+      "count": 1
+    },
+    {
+      "company": "Career Team Enterprises",
+      "count": 1
+    },
+    {
+      "company": "Premiersoft",
+      "count": 1
+    },
+    {
+      "company": "Revvity",
+      "count": 1
+    },
+    {
+      "company": "Paired",
+      "count": 1
+    },
+    {
+      "company": "bunny.net",
+      "count": 1
+    },
+    {
+      "company": "A.Team",
+      "count": 1
+    },
+    {
+      "company": "Abstract",
+      "count": 1
+    },
+    {
+      "company": "Rehire",
+      "count": 1
+    },
+    {
+      "company": "Clerky, Inc.",
+      "count": 1
+    },
+    {
+      "company": "Expion Health",
+      "count": 1
+    },
+    {
+      "company": "Smartbug Media/Point Sucess/Globalia",
+      "count": 1
+    },
+    {
+      "company": "Coalition Technologies",
+      "count": 1
+    },
+    {
+      "company": "Intelmatix",
+      "count": 1
+    },
+    {
+      "company": "EverAI",
+      "count": 1
+    }
+  ]
+}

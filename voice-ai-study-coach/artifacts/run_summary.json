@@ -1,0 +1,26 @@
+{
+  "tutor_model": "phi3.5:3.8b",
+  "quiz_model": "functiongemma:270m",
+  "demo_runs_path": "/home/ahmad/AI/Projects/voice-ai-study-coach/artifacts/runs/demo_sessions.json",
+  "demo_count": 3,
+  "evaluation": {
+    "summary": {
+      "n_tasks": 6,
+      "baseline_keyword_recall_mean": 0.0,
+      "tutor_keyword_recall_mean": 1.0,
+      "keyword_recall_gain": 1.0,
+      "retrieval_hit_rate": 1.0,
+      "source_citation_rate": 1.0,
+      "tutor_fallback_rate": 1.0,
+      "quiz_fallback_rate": 1.0,
+      "avg_tutor_audio_seconds": 6.0231666666666674,
+      "avg_total_latency_ms": 7025.446666666667
+    },
+    "predictions_path": "/home/ahmad/AI/Projects/voice-ai-study-coach/artifacts/evals/predictions.csv",
+    "summary_path": "/home/ahmad/AI/Projects/voice-ai-study-coach/artifacts/evals/summary.json",
+    "report_path": "/home/ahmad/AI/Projects/voice-ai-study-coach/artifacts/reports/voice_study_coach_report.md",
+    "trace_path": "/home/ahmad/AI/Projects/voice-ai-study-coach/artifacts/telemetry/traces.jsonl",
+    "telemetry_summary_path": "/home/ahmad/AI/Projects/voice-ai-study-coach/artifacts/telemetry/summary.json"
+  },
+  "run_summary_path": "/home/ahmad/AI/Projects/voice-ai-study-coach/artifacts/run_summary.json"
+}
