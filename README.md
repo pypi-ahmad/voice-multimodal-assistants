@@ -1,33 +1,58 @@
-# Voice Multimodal Assistants
+# voice-multimodal-assistants
+
+## Overview
 
 Voice and multimodal assistant applications and prototypes.
 
-## Repository Purpose
+## Tech Stack
 
-This repository groups related projects into a single, navigable codebase with consistent structure and indexing.
+- Multi-project repository
 
-## Project Index
+## Repository Structure
 
-| # | Project | Folder | Source Directory | Source Repository | Source Commit |
-|---|---|---|---|---|---|
-| 1 | `ai-job-market-copilot-ollama` | `ai-job-market-copilot-ollama` | `ai-job-market-copilot-ollama` | https://github.com/pypi-ahmad/ai-job-market-copilot-ollama.git | `ad4525584f` |
-| 2 | `realtime-multimodal-voice-assistant` | `realtime-multimodal-voice-assistant` | `realtime-multimodal-voice-assistant` | https://github.com/pypi-ahmad/realtime-multimodal-voice-assistant.git | `f3bf1f3997` |
-| 3 | `voice-ai-study-coach` | `voice-ai-study-coach` | `voice-ai-study-coach` | https://github.com/pypi-ahmad/voice-ai-study-coach.git | `1add02b5a2` |
-
-## Layout
-
-- Each top-level folder is a standalone project migrated from the source workspace.
-- Heavy local-only artifacts (virtual environments, datasets, model weights, caches) are intentionally excluded.
+- `ai-job-market-copilot-ollama/`
+- `CHANGELOG.md`
+- `CODE_OF_CONDUCT.md`
+- `CONTRIBUTING.md`
+- `LICENSE`
+- `README.md`
+- `realtime-multimodal-voice-assistant/`
+- `SECURITY.md`
+- `voice-ai-study-coach/`
 
 ## Getting Started
 
+### Prerequisites
+
+- Git
+- Runtime dependencies for this project's stack
+
+### Installation
+
 ```bash
-git clone <this-repo-url>
-cd <this-repo-folder>
-cd <project-folder>
+Review project-specific setup files in the repository root.
 ```
 
-## Maintenance Notes
+## Usage
 
-- Keep project-level documentation inside each project folder.
-- Use this repository as a curated portfolio layer across related workstreams.
+Use the project's documented entrypoint (CLI/app script) from this repository.
+
+## Testing
+
+Add tests under `tests/` and run the repository's configured test command.
+
+## Security
+
+Please review [SECURITY.md](SECURITY.md) for reporting and handling security issues.
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) before opening issues or pull requests.
+
+## Changelog
+
+Ongoing changes are tracked in [CHANGELOG.md](CHANGELOG.md).
+
+## License
+
+This project is licensed under the terms described in [LICENSE](LICENSE).
